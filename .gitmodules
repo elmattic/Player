@@ -1,0 +1,3 @@
+[submodule "player-core"]
+	path = player-core
+	url = https://github.com/elmattic/player-core.git
