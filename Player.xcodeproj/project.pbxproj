@@ -78,6 +78,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F008CA502726A19F0005C312 /* Build configuration list for PBXNativeTarget "Player" */;
 			buildPhases = (
+				F039604A27284DB100BF5D41 /* ShellScript */,
 				F008CA3E2726A19E0005C312 /* Sources */,
 				F008CA3F2726A19E0005C312 /* Frameworks */,
 				F008CA402726A19E0005C312 /* Resources */,
@@ -135,6 +136,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F039604A27284DB100BF5D41 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nexport PATH=\"$HOME/.cargo/bin:$PATH\"\n\ncargo lipo --verbose --xcode-integ --manifest-path player-core/Cargo.toml\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F008CA3E2726A19E0005C312 /* Sources */ = {
