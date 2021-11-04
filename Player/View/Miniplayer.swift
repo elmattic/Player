@@ -14,15 +14,13 @@ struct Miniplayer: View {
     
     var height = UIScreen.main.bounds.height / 3
     
-    var safeArea = UIApplication.shared.windows.first?.safeAreaInsets
-    
     var body: some View {
         VStack {
             Capsule()
                 .fill(Color.gray)
                 .frame(width: expand ? 60 : 0, height: expand ? 4 : 0)
                 .opacity(expand ? 1 : 0)
-                .padding(.top, expand ? safeArea?.top : 0)
+                .padding(.top, 0)
                 .padding(.vertical, expand ? 30 : 0)
             
             HStack(spacing: 15) {
@@ -129,27 +127,7 @@ struct Miniplayer: View {
                     Image(systemName: "speaker.wave.3.fill")
                 }
                 .padding()
-                
-                HStack(spacing: 22) {
-                    Button(action: {}) {
-                        Image(systemName: "arrow.up.message")
-                            .font(.title2)
-                            .foregroundColor(.primary)
-                    }
-                    
-                    Button(action: {}) {
-                        Image(systemName: "airplayaudio")
-                            .font(.title2)
-                            .foregroundColor(.primary)
-                    }
-                    
-                    Button(action: {}) {
-                        Image(systemName: "list.bullet")
-                            .font(.title2)
-                            .foregroundColor(.primary)
-                    }
-                }
-                .padding(.bottom, safeArea?.bottom == 0 ? 15 : safeArea?.bottom)
+                .padding(.bottom)
             }
             .frame(height: expand ? nil : 0)
             .opacity(expand ? 1 : 0)
