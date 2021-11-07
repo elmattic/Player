@@ -31,6 +31,12 @@ struct TabBar: View {
                         Text("Settings")
                     }
             }
+            .onAppear {
+                if #available(iOS 15.0, *) {
+                    let appearance = UITabBarAppearance()
+                    UITabBar.appearance().scrollEdgeAppearance = appearance
+                }
+            }
 
             Miniplayer(animation: animation, inMiniplayer: $inMiniplayer)
         })
