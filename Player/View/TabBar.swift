@@ -4,12 +4,10 @@ import SwiftUI
 struct TabBar: View {
     @State var currTabIndex = 0
     
-    @State var expand = false
-    
     @State var inMiniplayer: String? = Optional.none
-    
+
     @Namespace var animation
-    
+
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
             TabView(selection: $currTabIndex) {
@@ -33,8 +31,8 @@ struct TabBar: View {
                         Text("Settings")
                     }
             }
-            
-            Miniplayer(animation: animation, expand: $expand, inMiniplayer: $inMiniplayer)
+
+            Miniplayer(animation: animation, inMiniplayer: $inMiniplayer)
         })
     }
 }
