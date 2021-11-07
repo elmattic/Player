@@ -33,6 +33,7 @@
 		F0644E762729527D0080A056 /* Miniplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Miniplayer.swift; sourceTree = "<group>"; };
 		F0644E78272952A00080A056 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		F0644E7A272974470080A056 /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		F0CB5B3127371D5700047F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 		F008CA442726A19E0005C312 /* Player */ = {
 			isa = PBXGroup;
 			children = (
+				F0CB5B3127371D5700047F4C /* Info.plist */,
 				F02E3E432729833C00D1859C /* Model */,
 				F0644E7127294D8C0080A056 /* View */,
 				F008CA452726A19E0005C312 /* PlayerApp.swift */,
@@ -345,6 +347,7 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Player/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -375,6 +378,7 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Player/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
